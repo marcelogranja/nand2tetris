@@ -16,19 +16,19 @@ CHIP Mux {
     PARTS:
 Not(in=a ,out=nota ); 
 Not(in=b ,out=notb ); 
-Not(in=sel ,out=notsel ); 
+Not(in=sel ,out=nots ); 
 
 And(a=a ,b=notb ,out=t1);
-And(a=t1 ,b=notsel ,out=and1);
+And(a=t1 ,b=nots ,out=and1);
 
 And(a=a ,b=b ,out=t2 );
-And(a=t2 ,b=notsel ,out=and2 );
+And(a=t2 ,b=nots ,out=and2 );
 
 And(a=nota ,b=b ,out=t3 );
-And(a=t3 ,b=sel ,out=and3 );
+And(a=t3 ,b=s ,out=and3 );
 
 And(a=a ,b=b ,out=t4 );
-And(a=t4 ,b=sel ,out=and4 );
+And(a=t4 ,b=s ,out=and4 );
 
 Or(a=and1 ,b=and2 ,out=t5 ); 
 Or(a=t5 ,b=and3 ,out=t6 ); 
