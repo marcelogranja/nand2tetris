@@ -26,6 +26,8 @@ RAM8(in=in ,load=lf ,address=address[3..5] ,out=zf );
 RAM8(in=in ,load=lg ,address=address[3..5] ,out=zg );  
 RAM8(in=in ,load=lh ,address=address[3..5] ,out=zh );  
   
-Mux8Way16(a=za ,b=zb ,c=zc ,d=zd ,e=ze ,f=zf ,g=zg ,h=zh ,sel=address[0..2] ,out=out );
+
+
+Mux8Way16(a=za ,b=zb ,c=zc ,d=zd ,e=ze ,f=zf ,g=zg ,h=zh ,sel=address ,out=out );
 
 }

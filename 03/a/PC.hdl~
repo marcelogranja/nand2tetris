@@ -23,6 +23,6 @@ Mux16(a=fb ,b=incd ,sel=inc ,out=z0 );
 Mux16(a=z0 ,b=in ,sel=load ,out=z1 ); 
 Mux16(a=z1 ,b[0..15]=false ,sel=reset ,out=z2); 
 
-Register(in=z2 ,load=true ,out=out, out=fb ); 
+Register(in=f2 ,load=true ,out=out ); 
 
 }

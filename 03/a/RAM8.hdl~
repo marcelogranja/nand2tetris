@@ -16,16 +16,16 @@ CHIP RAM8 {
 
     PARTS:
 
-DMux8Way(in=load ,sel=address ,a=la ,b=lb ,c=lc ,d=ld ,e=le ,f=lf ,g=lg ,h=lh ); 
+DMux8Way(in=load ,sel=address ,a=ma ,b=mb ,c=mc ,d=md ,e=me ,f=mf ,g=mg ,h=mh ); 
 
-Register(in=in ,load=la ,out=za );
-Register(in=in ,load=lb ,out=zb );
-Register(in=in ,load=lc ,out=zc );
-Register(in=in ,load=ld ,out=zd );
-Register(in=in ,load=le ,out=ze );
-Register(in=in ,load=lf ,out=zf );
-Register(in=in ,load=lg ,out=zg );
-Register(in=in ,load=lh ,out=zh );
+Register(in=in ,load=ma ,out=za );
+Register(in=in ,load=mb ,out=zb );
+Register(in=in ,load=mc ,out=zc );
+Register(in=in ,load=md ,out=zd );
+Register(in=in ,load=me ,out=ze );
+Register(in=in ,load=mf ,out=zf );
+Register(in=in ,load=mg ,out=zg );
+Register(in=in ,load=mh ,out=zh );
 
 
 Mux8Way16(a=za ,b=zb ,c=zc ,d=zd ,e=ze ,f=zf ,g=zg ,h=zh ,sel=address ,out=out );

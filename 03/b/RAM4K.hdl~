@@ -17,14 +17,14 @@ CHIP RAM4K {
     PARTS:
 DMux8Way(in=load ,sel=address[0..2] ,a=la ,b=lb ,c=lc ,d=ld ,e=le ,f=lf ,g=lg ,h=lh ); 
 
-RAM512(in=in ,load=la ,address=address[3..11] ,out=za );
-RAM512(in=in ,load=lb ,address=address[3..11] ,out=zb );
-RAM512(in=in ,load=lc ,address=address[3..11] ,out=zc );  
-RAM512(in=in ,load=ld ,address=address[3..11] ,out=zd );  
-RAM512(in=in ,load=le ,address=address[3..11] ,out=ze );  
-RAM512(in=in ,load=lf ,address=address[3..11] ,out=zf );  
-RAM512(in=in ,load=lg ,address=address[3..11] ,out=zg );  
-RAM512(in=in ,load=lh ,address=address[3..11] ,out=zh );  
+RAM512(in=in ,load=la ,address=address[3..5] ,out=za );
+RAM512(in=in ,load=lb ,address=address[3..5] ,out=zb );
+RAM512(in=in ,load=lc ,address=address[3..5] ,out=zc );  
+RAM512(in=in ,load=ld ,address=address[3..5] ,out=zd );  
+RAM512(in=in ,load=le ,address=address[3..5] ,out=ze );  
+RAM512(in=in ,load=lf ,address=address[3..5] ,out=zf );  
+RAM512(in=in ,load=lg ,address=address[3..5] ,out=zg );  
+RAM512(in=in ,load=lh ,address=address[3..5] ,out=zh );  
   
 Mux8Way16(a=za ,b=zb ,c=zc ,d=zd ,e=ze ,f=zf ,g=zg ,h=zh ,sel=address[0..2] ,out=out );
 

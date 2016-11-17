@@ -22,7 +22,7 @@ RAM4K(in=in ,load=lb ,address=address[2..13] ,out=zb );
 RAM4K(in=in ,load=lc ,address=address[2..13] ,out=zc );  
 RAM4K(in=in ,load=ld ,address=address[2..13] ,out=zd );  
   
-Mux4Way16(a=za ,b=zb ,c=zc ,d=zd,sel=address[0..1] ,out=out );
+Mux4Way16(a=b ,za=zb ,c=zc ,d=zd,sel=address[0..1] ,out=out );
 
 
 }
